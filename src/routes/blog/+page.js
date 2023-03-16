@@ -10,7 +10,7 @@ export const load = async ({ params, parent }) => {
 		if (slug) {
 			path += slug;
 		} else {
-			path += 'home';
+			path += 'blog';
 		}
 		const resolveRelations = ['all_posts.posts'];
 		const dataStory = await storyblokApi.get(path, {

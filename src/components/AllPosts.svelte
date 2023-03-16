@@ -6,7 +6,6 @@
 	export let blok;
 
 	$: allPosts = $page?.data.posts;
-	console.log($page?.data.posts);
 </script>
 
 {#if allPosts}

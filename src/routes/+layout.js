@@ -53,7 +53,8 @@ export const load = async ({ params, url }) => {
 		use: [apiPlugin],
 		components: callbackComponents,
 		apiOptions: {
-			https: true
+			https: true,
+			cache: { type: 'memory' }
 		}
 	});
 	let storyblokApi = useStoryblokApi();
@@ -103,7 +104,6 @@ export const load = async ({ params, url }) => {
 		header: fetchNav(),
 		story: fetchPage(),
 		settings: fetchSettings(),
-
 		storyblokApi: storyblokApi
 	};
 };
